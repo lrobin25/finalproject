@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Laura Robinson Final</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="final website" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="http://parsleyjs.org/dist/parsley.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
+        <script src = "JS/projectfunctions.js"> </script>   
+        <!link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">        
+        <link type="text/css" rel="stylesheet" href="CSS/styles.css" />
+    </head>
+<body> 
+<header>
+    <script type="text/javascript"  src = "JS/header.js" ></script>               
+      
+</header>
+    
+<div class="leftside">       
+    <p> contact us </p>
+</div>
+    
+<div class="middlebox">
+<div>
+    <form class = "contactform" id="contactform" data-parsley-validate>
+        <fieldset>
+            <div>                
+                <label for="firstname">first name</label>
+                <input type = 'text' id="firstname" name="firstname" placeholder ="first name" required>
+            </div>
+            
+            <div>
+                <label for="lastname">last name</label>
+                <input id="lastname" name="lastname"  placeholder ="last name" required>
+            </div>
+            
+            <div>
+                <label for="email">email address</label>
+                <input id="email" name="email" type = 'email'  placeholder ="email" required data-parsley-type="email">
+            </div>
+            
+            <div>
+                <label >skill level</label>              
+                    A <input class="radio" type="radio" name="skill" id="skillA" value="A"> 
+                    B <input class="radio" type="radio" name="skill" id="skillB" value="B">  
+                    C  <input class="radio" type="radio" name="skill" id="skillC" value="C"> 
+                    D <input class="radio" type="radio" name="skill" id="skillD" value="D"> 
+            </div>
+            
+            <div>
+                <label> how did you hear about us </label>
+                    <select name ="sources" class="sources">
+                        <option class="sources" value ="friend"> Friend </option>
+                        <option class="sources" value ="CWGA"> CWGA </option>
+                        <option class="sources" value ="Denvergolf"> Denver Golf </option>
+                    </select>
+            </div>      
+           
+            <div>
+                <label for="message">your message</label>
+                <textarea id="message" name="message"  cols='50' rows='3' > </textarea>
+            </div>  
+            
+              <button class='submitbutton' id="submitcontact">submit</button>
+        </fieldset>    
+    </form>     
+                      
+    <button class='submitbutton' id="validate">validate post</button>       
+</div>	
+
+</div>	
+    
+<div>    
+    <h4 class = "validatepost"> </h4>
+        
+</div> 
+
+<footer>
+    <script type="text/javascript"  src = "JS/footer.js" ></script> 	 
+</footer>
+
+</body>
+</html>
+    
+    
